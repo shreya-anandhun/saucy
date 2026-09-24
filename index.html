@@ -84,7 +84,7 @@ body {
     linear-gradient(90deg, var(--check) 50%, transparent 50%),
     linear-gradient(var(--check) 50%, transparent 50%);
   background-size: 56px 56px;
-  overflow-x: hidden;
+  overflow-x: clip; /* clip (not hidden) so the sticky nav keeps working */
   transition: background-color .5s, color .5s;
 }
 
